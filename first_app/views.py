@@ -5,4 +5,7 @@ def projects(request):
     return render(request, 'projects.html')
 
 def project(request):
-    return render(request, 'single_project.html')
+    return render(request, 'singleproject.html')
+
+def shubham():
+    pass

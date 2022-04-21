@@ -4,5 +4,43 @@
 
 <h1>Hello project1 </h1>
 
+<h1>Name:{{name}}</h1>
+
+{% if age > 18 %}
+<h4>Hey you are an adult, {{name}}</h4>
+
+{% elif age == 18 %}
+<h4>You have just entered the hell</h4>
+
+{% else %}
+<h4>You are a minor, go away kid.</h4>
+
+{% endif %}
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>ID</th>
+            <th>Student</th>
+        </tr>
+    </thead>    
+    <tbody>
+        {% for project in projects  %}
+        <tr>
+            <th>{{project.name}}</th>
+            <th>{{project.id}}</th>
+            <th>{{project.isStudent}}</th> 
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
 {% endblock content %}
+
+
+
+
+
 
